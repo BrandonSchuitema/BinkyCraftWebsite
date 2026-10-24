@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Fourteen</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/youtube_racheal_background_potato_v1.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">BinkyCraft</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_About.html" class="header__link">About </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_About.html"> About </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Fourteen - Useful UI
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details" style="background-image: url(Images/background_dirt.png); background-size: 200px 200px;">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Fourteen Overview</h3>
+              <p class="project-details__desc-para">
+                In the last devlog I said I was gonna add some stuff related to enemies.
+                I did not. Don't judge me.
+                But I can say for a fact that the next devlog will involve enemies.
+                I'm really feeling like working on them.
+              </p>
+              <p class="project-details__desc-para">
+                This devlog is just full of UI and stuff related to that.
+                Just coding in stuff that really should've been in the game earlier than now.
+                And some of the stuff in this devlog still isn't great.
+                But I can only work on so much UI before I start to get extremely annoyed with it.
+                So more finishing touches will have to wait till another day.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                First main feature will be the 2x2 crafter in the player's inventory.
+                Along with the newly added section of the player's inventory.
+                As you can imagine, it wasn't difficult at all to make the 2x2 crafter in the inventory.
+                I just copy/ pasted the code for the crafting table, but removed some of the slots the player could put items into.
+                But with this new feature, the player can chop wood, craft a Crafting Table, make a pick axe, and then go mining for diamonds.
+                And now with a more proper player's inventory, I can add stuff to it in the future that might relate to player stuff.
+                Such as current status effects, or an image of the player, or an off hand slot.
+                There's a bunch of space in it, so I can add several stuff.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png" style="width: 50%;">
+              </div> 
+              <p class="project-details__desc-para">
+                In the last devlog I believe, I did some rough UI work for the Furnace.
+                Well in this devlog I touched it up a bit, and also added in the functionality for it.
+                It still needs a few more touch ups for the player's sake, but it does work.
+                Each item that can be smelted has a set time for how long they take to smelt, and how many of the newly created item will be made.
+                And of course, the player has to use a fuel from a pre-approved list.
+                Which right now is just Coal.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/furnace_ui.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                This next feature was added in a long while ago now, but I decided to improve upon it.
+                It's the little pop up on the screen for when the player hovers over an item.
+                I made it where the sizing fits the text a little better for long and short names.
+                I also made it where extra text will get added when hovering over specific items like food or tools.
+                This extra text will say how much the food will replinish the player's hunger, how much that attack will do, and several other things along that line.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_small_text.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_durdur.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_food.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_tool.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                In the creative menu, there is no indication for what section of items the player is looking at.
+                Somehow I didn't add anything like that until now.
+                Well, now I have a tab highlight to help show the player what section they're currently in.
+                And not that it matters that much, but when the player opens the creative inventory, it'll hover over the tab for the section the player was last in.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/tab_highlight_food.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/tab_hightlight_tools.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                For this final UI feature, I added in the chest block along with a UI for it.
+                When the player places a chest and opens it, a UI object will generate and link itself to that specific chest block.
+                Which just means that each chest will have it's own UI and not share items.
+                As it should be.
+                Though thinking back, I really should've made an ender chest first to set a basis for the code.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/chest_ui.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                And I was trying to set up saving for the chests, but it's proving to be more complicated than I thought.
+                The problem I'm dealing with is that the chests can be placed and destroyed.
+                This is just leading to many complications with save files and loading and what not.
+                So I'm saving this for a saving related devlog update in the future.
+                I'm just getting sick of working on it right now.
+              </p>                     
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                There isn't much here sadly, but there will always be something.
+                Firstly there's the chest block I added into the game.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/chest_block.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                Then there's the newly added block type: carpets.
+                I have the wool version for all of them.
+                I'm really thinking of adding other carpet types in the future since it'd be really easy to do.
+                Like maybe something for leather? Or carpets with an coloured edge to them?
+                It's stuff I can do. It'll just add a lot more blocks to the game.
+                I'm already over 500 blocks and items currently.
+                Really doesn't feel like it though.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/all_carpets.png" style="width: 50%;">
+              </div>              
+
+              <h3 class="project-details__content-title">Recipes</h3>
+              <p class="project-details__desc-para">
+                Given the nature of this devlog update, I thought it time to start really working on the recipes in the game.
+                Because I'll be honest: I haven't given many items a crafting recipe.
+                Literally the only way to get most of the blocks is solely from the creative menu.
+                Which will be a problem when I finally seperate the two gamemodes.
+                So I'm gonna start really working on this.
+                So here is a bunch of recipes for items in the game.
+                Just to give you a taste.
+                Oh, and I've also of course added a bunch of stuff that can be smelted.
+                Like ores, some blocks, a couple dyes, glass, and more.
+                And when I've been adding in recipes, I've also been checking if it'll work for the 2x2 crafter in the player's inventory.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/boots_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pants_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/chestplate_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/helmet_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/bread_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/bucket_recipe.png" style="width: 50%;">   
+                <img src="Images/BinkyCraft/DevlogFourteen/cake_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/cookie_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/melonSlice_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pickAxe_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pumpkinPie_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/woodSlab_recipe.png" style="width: 50%;">   
+                <img src="Images/BinkyCraft/DevlogFourteen/woodStairs_recipe.png" style="width: 50%;">                                           
+              </div>              
+              <p class="project-details__desc-para">
+                Oh, and I'm also slowly working on a Recipe page for this website.
+                I've decided I don't want a recipe book in the game.
+                I want player's to put in at least a small amount of effort to find out how to get items.
+                Oh, and I took those pictures above before I did the work on the item info pop up.
+                Just in case you had any thoughts about that.
+              </p>              
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                Now that the game has all this new UI and the player can craft and smelt stuff, it doesn't feel as incomplete.
+                Only by a fraction, but still.
+                And I'm going to continue working on more crafting recipes and stuff to smelt.
+                Like I still haven't even hit most of the blocks in the game for that stuff. There's just so many items.
+              </p>
+              <p class="project-details__desc-para">
+                Speaking of items... you may only know what I'm talking about if you know coding, but I'm going to continue anyways.
+                I didn't know I was going to add quite this many blocks and items to the game when I first started working on the project.
+                So all the items are just an array for a class that has all the block details.
+                This isn't great.
+                So, I've been slowly moving everything over to scriptable objects.
+                But this has been such a pain, and something I really should've done so long ago.
+                Again, there's over 500 items currently.
+                So it's going to take a while, but it'll be good for the long term.
+              </p>
+              <p class="project-details__desc-para">
+                I said this in the introduction, but the next devlog will be related the enemies and mobs.
+                I've actually already started working on it.
+                So look forward to that.
+              </p>
+              <p class="project-details__desc-para">
+                Oh, and I'm going to stop adding the pictures at the end of the devlogs. I've decided that I don't like it.
+                I'm going to keep the pictures for the other devlogs though.
+              </p>                         
+            </div>
+
+                <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            </div>   
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
+            <p class="main-footer__short-desc">
+              If BinkyCraft was a person, you'd want to marry them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

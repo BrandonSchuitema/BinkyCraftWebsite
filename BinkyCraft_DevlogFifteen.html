@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Fifteen</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/youtube_racheal_background_potato_v1.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">BinkyCraft</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_About.html" class="header__link">About </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_About.html"> About </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Fourteen - Mobs and Enemies
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details" style="background-image: url(Images/background_dirt.png); background-size: 200px 200px;">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Fifteen Overview</h3>
+              <p class="project-details__desc-para">
+                This devlog update really brings the world to life.
+                Not only is there plant life throughtout the world, but now there is also animal life.
+                The movement for everything is still pretty janky though.
+                But that'll get smoothed out in time as I perfect stuff and figure out exactly how I want everything to move and operate.
+              </p>
+              <p class="project-details__desc-para">
+                Extra text for something I was going to talk about, but I forgot what it was right after.
+              </p>
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                The first feature I'm going to talk about will of course be the natural spawning of mobs throughout the world.
+                I'll quickly go into how that works.
+                The player is the center of attention here.
+                Within a set range of the player, the mob spawner will choose a random spot.
+                Then it'll check that spot for conditions.
+                Is there any mob that can spawn in this biome the spot is in? Yes. Ok good.
+                Is it in the terrain? Choose again.
+                Is it fully in air? Good. Now bring it down to a good height for that mob to spawn on the ground.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png" style="width: 50%;">
+              </div> 
+              <p class="project-details__desc-para">
+                And now that the mobs can spawn naturally in the world, I finally added some very basic for all the mob models I have currently in the game.
+                The mobs will of course just spawn and move about randomly though.
+                The enemies though like the Zombie will try to follow the player and attack them.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/furnace_ui.png" style="width: 50%;">
+              </div>
+              <p class="project-details__desc-para">
+                Attacking brings me to my next feature.
+                The player can now attack mobs, and mobs can now attack the player.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_small_text.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_durdur.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_food.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_tool.png" style="width: 50%;">
+              </div>                            
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                The biomes will of course have a whole bunch of new blocks to them.
+                This first segment of blocks will be everything found in the Jungle Biome.
+                So here are the new Jungle Wood blocks, and a picture of the Jungle Biome again.
+                You can check out the new Bamboo pretty good in that.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_blocks.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_biome.png" style="width: 50%;">
+              </div>
+
+              <h3 class="project-details__content-title">Recipes</h3>
+              <p class="project-details__desc-para">
+                Given the nature of this devlog update, I thought it time to start really working on the recipes in the game.
+                Because I'll be honest: I haven't given many items a crafting recipe.
+                Literally the only way to get them is in the creative menu.
+                So I'm gonna start really working on this.
+                So here is a bunch of recipes for items in the game.
+                Just to give you a taste.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFourteen/boots_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pants_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/chestplate_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/helmet_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/bread_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/bucket_recipe.png" style="width: 50%;">   
+                <img src="Images/BinkyCraft/DevlogFourteen/cake_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/cookie_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/melonSlice_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pickAxe_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/pumpkinPie_recipe.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFourteen/woodSlab_recipe.png" style="width: 50%;">   
+                <img src="Images/BinkyCraft/DevlogFourteen/woodStairs_recipe.png" style="width: 50%;">                                           
+              </div>              
+              <p class="project-details__desc-para">
+                Oh, and I'm also slowly working on a Recipe page for the website.
+                I've decided I don't want a recipe book in the game.
+                But I am fine with having somewhere online for people to search up how to craft the items.
+                Oh, and I took those pictures before I did the work on the item info pop up.
+                Just in case you had any thoughts about that.
+              </p>              
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                This devlog update took a little longer to release, and I'm fine with that.
+                There's a bit more content in this update.
+                At least it took longer to make the content.
+                And overall, I'm happy with the update.
+              </p>
+              <p class="project-details__desc-para">
+                Now that the world is starting to look like it's actually alive, maybe it's time to start properly adding in actual life.
+                Not just plants, but things moving around.
+                I'm not saying that's the next update, but it's possible.
+                At the very least, I'm going to start working away at it on the side.
+                I do know for sure that the next update will continue making the game feel more complete.
+              </p>
+              <p class="project-details__desc-para">
+                Side topic because I want to talk about this.
+                I was thinking what I would do if someone offered to help work on this project with me.
+                Would I be happy for the help? Of course.
+                But would I actually let them help? I'm not sure.
+                There's a lot of work to be done, but this project is also a learning excersize for me, and also a sort of passion project.
+                I honestly think I'd turn down their help.
+                That is unless their help was better textures, UI, and/ or sounds.
+                Those are all things that I could be much better, and I don't have the talent for.
+              </p>                               
+            </div>
+
+                <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_bambooWood.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_birch_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_cherry_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_darkOak_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_desert_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_grasslands_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_mushroom_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_oak_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_redDesert_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_redSand_blocks.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_rockyPlains_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_spruce_biome.png" style="width: 50%;">
+              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_wood_stairs.png" style="width: 50%;">
+            </div>   
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
+            <p class="main-footer__short-desc">
+              Your first words were "Binky...Craft". That's a fact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
