@@ -38,6 +38,9 @@
             <li class="header__link-wrapper">
               <a href="BinkyCraft_About.html" class="header__link">About </a>
             </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_Recipes.html" class="header__link">Recipes </a>
+            </li>              
           </ul>
           <div class="header__main-ham-menu-cont">
             <img
@@ -63,6 +66,10 @@
             <li class="header__sm-menu-link">
               <a href="BinkyCraft_About.html"> About </a>
             </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_Recipes.html"> Recipes </a>
+            </li>            
           </ul>
         </div>
       </div>
@@ -72,7 +79,7 @@
         <h1 class="heading-primary">Binky Craft</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Devlog Fourteen - Mobs and Enemies
+            Devlog Fourteen - Enemies and Mobs Part 2
           </p>
         </div>
         <!--
@@ -87,7 +94,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png"
+              src="Images/BinkyCraft/DevlogFifteen/spawn_chamber_room.png"
               alt="Project Image"
               class="project-details__showcase-img"
               style="border-radius: 30px;"
@@ -103,110 +110,134 @@
                 But that'll get smoothed out in time as I perfect stuff and figure out exactly how I want everything to move and operate.
               </p>
               <p class="project-details__desc-para">
-                Extra text for something I was going to talk about, but I forgot what it was right after.
+                For instance, I need to set the sizing of the mobs in code so that they don't enter a block before jumping.
+                But I need to get an idea of how big I actually want these mobs.
+                The cat I thought was fine, but then my sister said it should be bigger.
+                So these are values and sizings I'll slowly get the way I want as I see more of them in the gameplay.
+              </p>
+              <p class="project-details__desc-para">
+                Also this devlog will be a little sparse on the pictures and videos.
+                I was too lazy to take a bunch of small videos for all the new mob related stuff I added.
+                So you'll just have to believe me.
               </p>
 
               <h3 class="project-details__content-title">Main Features</h3>
               <p class="project-details__desc-para">
-                The first feature I'm going to talk about will of course be the natural spawning of mobs throughout the world.
+                The first feature I'm going to talk about will of course be the natural spawning of the mobs throughout the world.
                 I'll quickly go into how that works.
                 The player is the center of attention here.
                 Within a set range of the player, the mob spawner will choose a random spot.
                 Then it'll check that spot for conditions.
                 Is there any mob that can spawn in this biome the spot is in? Yes. Ok good.
-                Is it in the terrain? Choose again.
+                Is it in the terrain? If yes, choose again.
                 Is it fully in air? Good. Now bring it down to a good height for that mob to spawn on the ground.
               </p>
-              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-                <img src="Images/BinkyCraft/DevlogFourteen/player_inventory_ui.png" style="width: 50%;">
-              </div> 
               <p class="project-details__desc-para">
-                And now that the mobs can spawn naturally in the world, I finally added some very basic for all the mob models I have currently in the game.
-                The mobs will of course just spawn and move about randomly though.
-                The enemies though like the Zombie will try to follow the player and attack them.
+                Naturally spawning like the above isn't the only ways a mob or enemy can spawn.
+                I also put a new structure in the game that the player can find underground.
+                If you've ever played Minecraft, I'm sure you have idea of what I added.
+                It's a spawn chamber.
               </p>
               <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-                <img src="Images/BinkyCraft/DevlogFourteen/furnace_ui.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFifteen/spawn_chamber_room.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFifteen/spawn_chamber_ground.png" style="width: 50%;">                
               </div>
               <p class="project-details__desc-para">
-                Attacking brings me to my next feature.
-                The player can now attack mobs, and mobs can now attack the player.
+                And now that the mobs can spawn naturally in the world, I finally added some very basic AI for all the mob models I currently have in the game.
+                The mobs for the most part will just spawn and move about randomly though.
+                With a few exceptions I'll get into later.
+                The enemies though like the Zombie will try to follow the player and attack them.
+                I was also going to add more mobs and enemies to the game, but I wanted to work more on what I already have.
+                So that type of stuff will have to wait till I at least finish Alpha 1 of the game and release it.
+                Here's a video of a bunch of the mobs moving about.
+                I found a good area in the world where a lot of the mobs would congregate.
               </p>
+            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+              <video controls="controls" style="width: 70%">
+                <source src="Images/BinkyCraft/DevlogFifteen/mob_life.mp4" type="video/mp4">
+              </video>                                                            
+            </div>
               <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_small_text.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_durdur.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_food.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/item_info_popUp_tool.png" style="width: 50%;">
-              </div>                            
+                <img src="Images/BinkyCraft/DevlogFifteen/spider_enemy.png" style="width: 50%;">
+              </div>            
+              <p class="project-details__desc-para">
+                The mobs and enemies can now be attacked, and even drop items on their death.
+                There's also a quick red flash for this, just like in Minecraft.
+                Since I made it where they could be attacked, I made each weapon have a hidden range value.
+                Basically all weapons have a slightly higher reach than just using the hand,
+                but with sword being able to reach futher, and the axe being able to reach the furthest.
+                Axe dealing less damage than the sword, but being able to reach further.
+                And the sword dealing more damage, but having less range.
+                Does it make sense, not really, but I'm going to keep it like that.
+              </p>
+              <p class="project-details__desc-para">
+                Some mobs do more than just walk around, or try to attack the player.
+                The chicken for instance, will drop eggs occaisonally.
+                The sheep will eat grass sometimes.
+                And you can harvest milk from a cow with a bucket as well.
+                That's pretty much it for right now.
+                But I'm going to slowly add in more unique stuff for each mob.
+                Just as soon as I have some ideas for them.
+              </p> 
+              <p class="project-details__desc-para">
+                Peaceful mobs as a whole do actually have another feature than just walking around.
+                I almost forgot about this.
+                When you attack them, they do run faster to try and get away from you.
+              </p>
+              <p class="project-details__desc-para">
+                This next feature is a very simple addition, but I'm sure it'll be helpful at some point.
+                The debug menu now show what enemy or mob the player is currently looking at.
+              </p>                     
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogFifteen/debug_mob_target.png" style="width: 50%;">
+              </div> 
 
               <h3 class="project-details__content-title">Blocks</h3>
               <p class="project-details__desc-para">
-                The biomes will of course have a whole bunch of new blocks to them.
-                This first segment of blocks will be everything found in the Jungle Biome.
-                So here are the new Jungle Wood blocks, and a picture of the Jungle Biome again.
-                You can check out the new Bamboo pretty good in that.
+                There is actually barely any new blocks in this devlog update.
+                I'm actually trying to cut back on how many blocks and items I add into the game.
+                That's because I'm really trying to work on more essential stuff at the moment,
+                and not just adding in more blocks that the player can't even get naturally in the world.
+                So here is only three new blocks: Cobweb, Creature Spawner, and Void Chest.
               </p>
               <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-                <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_blocks.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_biome.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogFifteen/new_blocks.png" style="width: 50%;">
               </div>
 
-              <h3 class="project-details__content-title">Recipes</h3>
+              <h3 class="project-details__content-title">Items</h3>
               <p class="project-details__desc-para">
-                Given the nature of this devlog update, I thought it time to start really working on the recipes in the game.
-                Because I'll be honest: I haven't given many items a crafting recipe.
-                Literally the only way to get them is in the creative menu.
-                So I'm gonna start really working on this.
-                So here is a bunch of recipes for items in the game.
-                Just to give you a taste.
+                Now that the enemies can be killed and items can drop from them, I thought it time to add a few related items.
+                So mobs like cows and pigs can now actually drop their respective meat.
+                And you can of course cook it in a furnace.
               </p>
               <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-                <img src="Images/BinkyCraft/DevlogFourteen/boots_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/pants_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/chestplate_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/helmet_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/bread_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/bucket_recipe.png" style="width: 50%;">   
-                <img src="Images/BinkyCraft/DevlogFourteen/cake_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/cookie_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/melonSlice_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/pickAxe_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/pumpkinPie_recipe.png" style="width: 50%;">
-                <img src="Images/BinkyCraft/DevlogFourteen/woodSlab_recipe.png" style="width: 50%;">   
-                <img src="Images/BinkyCraft/DevlogFourteen/woodStairs_recipe.png" style="width: 50%;">                                           
-              </div>              
-              <p class="project-details__desc-para">
-                Oh, and I'm also slowly working on a Recipe page for the website.
-                I've decided I don't want a recipe book in the game.
-                But I am fine with having somewhere online for people to search up how to craft the items.
-                Oh, and I took those pictures before I did the work on the item info pop up.
-                Just in case you had any thoughts about that.
-              </p>              
+                <img src="Images/BinkyCraft/DevlogFifteen/food_menu_new.png" style="width: 50%;">                                          
+              </div>                            
 
               <h3 class="project-details__content-title">Conclusion</h3>
               <p class="project-details__desc-para">
-                This devlog update took a little longer to release, and I'm fine with that.
-                There's a bit more content in this update.
-                At least it took longer to make the content.
-                And overall, I'm happy with the update.
+                I am so happy now that there is actual things moving around in this world.
+                I had bees before, but that was it.
+                Now I have a whole group of mobs and enemies, and they can spawn naturall in the world.
+                The game is almost complete.
+                To a degree. For an Alpha 1 release.
               </p>
               <p class="project-details__desc-para">
-                Now that the world is starting to look like it's actually alive, maybe it's time to start properly adding in actual life.
-                Not just plants, but things moving around.
-                I'm not saying that's the next update, but it's possible.
-                At the very least, I'm going to start working away at it on the side.
-                I do know for sure that the next update will continue making the game feel more complete.
+                Can I tell you a secret?
+                I didn't actually hook up any spawning to the underground spawn chambers yet.
+                But I have all the code for it done, so don't worry about that.
+                It's just that I'm not sure what mobs or enemies I want in them.
+                In Minecraft, you're basically only going to find Spiders, Zombies, or Skeletons.
+                Very unlikely to find anything else.
+                But I think it'd be cool to just as easily find one for cats or pigs.
+                Something I'll think about in between devlogs.
               </p>
               <p class="project-details__desc-para">
-                Side topic because I want to talk about this.
-                I was thinking what I would do if someone offered to help work on this project with me.
-                Would I be happy for the help? Of course.
-                But would I actually let them help? I'm not sure.
-                There's a lot of work to be done, but this project is also a learning excersize for me, and also a sort of passion project.
-                I honestly think I'd turn down their help.
-                That is unless their help was better textures, UI, and/ or sounds.
-                Those are all things that I could be much better, and I don't have the talent for.
-              </p>                               
+                Also now that I'm getting closer and closer to an Alpha 1 release of the game,
+                I'm probably going to start working on some progress related devlogs pretty hard.
+                No new dimensions or giant block hauls.
+                Got to start working on more essential features if I ever want this game to be complete.
+              </p>                   
             </div>
 
                 <a
@@ -217,28 +248,7 @@
             <br>
             <br>
             <br>
-            <br>
 
-            <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_bambooWood.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_birch_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_cherry_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_darkOak_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_desert_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_grasslands_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_jungle_blocks.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_mushroom_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_oak_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_redDesert_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_redSand_blocks.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_rockyPlains_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_spruce_biome.png" style="width: 50%;">
-              <img src="Images/BinkyCraft/DevlogThirteen/binkycraft_devlogThirteen_wood_stairs.png" style="width: 50%;">
-            </div>   
-            <br>
-            <br>
-            <br>
           </div>
         </div>
       </div>
@@ -249,7 +259,7 @@
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
             <p class="main-footer__short-desc">
-              Your first words were "Binky...Craft". That's a fact.
+              If you ever feel alone, just remember BinkyCraft is here for you.
             </p>
           </div>
         </div>
