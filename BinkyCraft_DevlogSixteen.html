@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Sixteen</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/youtube_racheal_background_potato_v1.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">BinkyCraft</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_About.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_Recipes.html" class="header__link">Recipes </a>
+            </li>              
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_About.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_Recipes.html"> Recipes </a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Sixteen - UI and Saving Part 2
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details" style="background-image: url(Images/background_dirt.png); background-size: 200px 200px;">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogSixteen/durability_saving.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Sixteen Overview</h3>
+              <p class="project-details__desc-para">
+                With the release of this devlog update, I am now dramatically closer to releasing the Alpha 1 version of the game.
+                There wil be a lot of stuff missing from that version, but the essence of the game will be there.
+                This devlog update completed a lot of essential stuff related to gameplay and saving.
+              </p>           
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                The first feature I'm going to talk about is the Void Chest.
+                The player can store items in it, and it will all get saved.
+                So now not all items have to be stored in the player's inventory.
+                The Void Chest is basically my version of the Ender Chest from Minecraft.
+                By the way, I was going to add regular chests to Alpha 1, but I don't want to encourage storing a bunch of items in a version that will quickly get replaced.
+                I actually took chests out of the game for Alpha 1. They'll get added back in when the game is on a proper version of itself.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/void_chest_ui.png" style="width: 50%;">              
+              </div>              
+              <p class="project-details__desc-para">
+                For the next feature, let's take a look at something cool: the player hand.
+                That's a thing now.
+                And it'll also show the item the player is currently holding.
+                Which right now is just the item icon displayed in the hand.
+                This looks really funny when holding a weapon or tool.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/item_holding_block.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogSixteen/item_holding_tool.png" style="width: 50%;">                
+              </div>
+              <p class="project-details__desc-para">
+                Now onto the player's inventory.
+                For a little user friendliness, I gave the armour slots a background image of the armour that's supposed to go in that slot.
+                Just to help the player understand where each type of armour is supposed to be equipped.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/inventory_armour_outline.png" style="width: 50%;">
+              </div>        
+              <p class="project-details__desc-para">
+                Speaking of armour, I added another useful feature related to them for player's conveinence.
+                The item info pop up will now display their defense rating.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/item_info_defensePoint.png" style="width: 50%;">
+              </div>            
+              <p class="project-details__desc-para">
+                The defense rating is the next feature I'll talk about.
+                When the player equips armour, it'll add to the total defense points the player has.
+                So a chestplate might have three points, and the leggings two points.
+                That'll be five.
+                For every five points of defense, there is a chance of removing a point of incoming damage.
+                So having really good armour can seriously help the player take a lot less damage overall.
+                And the number of total defense points is displayed on the screen with little icons.
+              </p> 
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/toolbar_defense.png" style="width: 50%;">
+              </div>                
+              <p class="project-details__desc-para">
+                Now let's talk about the experience bar.
+                Basically it fully works now.
+                The player can earn experience by killing mobs and enemies, and level up.
+                This of course all saves as well.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/experience_bar_ui.png" style="width: 50%;">
+              </div>               
+              <p class="project-details__desc-para">
+                There is only one more feature to talk about.
+                Armour and tools now have durability.
+                So when the player crafts a wooden pickaxe, it will slowly get destroyed when mining away.
+                And when the player gets attacked, the player's armour will take a point of durability.
+                The current durability of an item will also get displayed on the item info pop up as well.
+              </p> 
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogSixteen/durability_saving.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogSixteen/item_info_durability.png" style="width: 50%;">
+              </div>                                     
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                I can't believe I'm saying this, but there is no new blocks or items in this devlog update.
+                I'm trying really hard not to add more stuff until I get more of the actual game done.
+                I'm proud of myself for this.
+              </p>                           
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                Because of this devlog update, the game is getting so close to the Alpha 1 release.
+                There's still a few more items on the list that I want to complete before that point though.
+                But this devlog update knocked out quite a few tasks for this.
+                Like the experience bar, durability, and armour having a purpose.
+              </p>
+              <p class="project-details__desc-para">
+                I have no idea what the next devlog update will be centered around,
+                but I know I will try to knock out some more important tasks in that update as well.
+              </p>                              
+            </div>
+
+                <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
+            <p class="main-footer__short-desc">
+              BinkyCraft knows when you're awake, and it knows when you're sleeping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
