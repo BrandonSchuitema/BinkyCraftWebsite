@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Eighteen</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/youtube_racheal_background_potato_v1.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">BinkyCraft</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_About.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_Recipes.html" class="header__link">Recipes </a>
+            </li>              
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_About.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_Recipes.html"> Recipes </a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Eighteen - Advanced Blocks
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details" style="background-image: url(Images/background_dirt.png); background-size: 200px 200px;">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/DevlogEighteen/sugarcane_lake.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Eighteen Overview</h3>
+              <p class="project-details__desc-para">
+                The very first thing I'm goint to say: I don't want to even think about crafting recipes for a while.
+                I finally added in all the crafting recipes for all the items in the game.
+                And it didn't take that long thankfully.
+                It was just really tedious!
+                Also I am really hoping I didn't accidentally miss an item.
+                That would be my luck.
+              </p>
+              <p class="project-details__desc-para">
+                With this devlog update, a few more tasks have been completed towards my goal of the Alpha 1 release of the game.
+                Builders will also love this update, since it'll make building a nice house dramatically easier.
+              </p>         
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                Builders are going to love what I'm about to say: blocks can now rotate.
+                Meaning the player can now have a block facing one direction or a whole other direction.
+                This is useful for stuff like roofs, which would generally have stairs facing in completely opposite directions.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/directional_blocks.png" style="width: 50%;">     
+                <img src="Images/BinkyCraft/DevlogEighteen/directional_stairs.png" style="width: 50%;">                          
+              </div>  
+              <p class="project-details__desc-para">
+                Along with blocks having a directional state, I also added that into the player's debug screen as well.
+                So the player will know which direction they're facing.
+                This isn't exactly helpful right now, but I'm sure it'll be helpful at some point in the future.
+              </p>  
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/debug_facing_direction.png" style="width: 50%;">                             
+              </div>                                       
+              <p class="project-details__desc-para">
+                I also made it where blocks that are supposed to only be semi-transparent like the stained glass variants actually are.
+                Meaning it took this long for Glass and White Stained Glass to actually look different.
+                The slight tint to these windows is quite nice.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/white_stained_glass.png" style="width: 50%;">     
+                <img src="Images/BinkyCraft/DevlogEighteen/green_glass.png" style="width: 50%;"> 
+                <img src="Images/BinkyCraft/DevlogEighteen/red_glass.png" style="width: 50%;">                                           
+              </div>               
+              <p class="project-details__desc-para">
+                This next feature I am extremely happy about.
+                I now have Water and Lava in the game.
+                In the World Realm (Main World), the terrain now has a sea level.
+                With that, water will spawn in those areas creating ponds, lakes, and rivers.
+                I also made it where sand will spawn around these sources of water, and clay under the water.
+                Which by the way, means the player finally has a way to get clay, which means they can also now get the brick blocks in survival.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/spruce_lake.png" style="width: 50%;">   
+                <img src="Images/BinkyCraft/DevlogEighteen/hill_lake.png" style="width: 50%;">                            
+              </div>                       
+              <p class="project-details__desc-para">
+                Lava right now can only spawn in the Inferno Realm.
+                I actually have two biomes in the Inferno Realm: Desolate Hills and Lava Depths.
+                Basically the hills are, well giant hills, and the depths are where you will find giant pools of lava.
+                This makes the terrain in that realm even more hellish.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/inferno_lake_high.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogEighteen/inferno_lake_low.png" style="width: 50%;">                              
+              </div>        
+              <p class="project-details__desc-para">
+                And I of course gave a screen overlay while the player is in those liquids.
+                Also adding in some slighyly different movement, making them fall and move slower.
+                Another also: the player can use a bucket to pick up water and lava.
+                They can't do anything with those items, but that's a future problem.
+                The player can also mine the blocks in water and place blocks while in the water and lava by the way.
+                Just thought I'd put it out there, yah.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/lava_overlay.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogEighteen/water_overlay.png" style="width: 50%;">                              
+              </div>                
+              <p class="project-details__desc-para">
+                I'm not done talking about the water and lava yet.
+                It's pretty cool stuff.
+                They run through a different texture system than the rest of the blocks in the game.
+                I did this so that I could make the textures a little more dynamic.
+                Or should I say advanced. Get it? The title of this devlog is: Advanced Blocks.
+                Anyways, the water and lava textures will slowly move to the side making them look like they're actually moving.
+                The textures also slowly merge (lerp) from one texture to another and back again.
+                This is so the water and lava will feel a touch more alive.
+                If I explained it all badly, then you'll see what I mean in the videos below.
+              </p>    
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <video controls="controls" style="width: 70%">
+                  <source src="Images/BinkyCraft/DevlogEighteen/water_moving.mp4" type="video/mp4">
+                </video>
+                <video controls="controls" style="width: 70%">
+                  <source src="Images/BinkyCraft/DevlogEighteen/lava_moving.mp4" type="video/mp4">
+                </video>                                                                           
+               </div>                                            
+              <p class="project-details__desc-para">
+                This next bit is something I only thought of while doing some gameplay testing last minute.
+                I decided that I don't want chests to be in this version of the game.
+                But that lead me to a problem: there is no way for the player to get rid of most items.
+                The tools and armour would naturally wear out, and blocks could technically be placed.
+                But I don't want that, and those things wouldn't work for all items in the game anyways.
+                So I made it where the player can drop items from their inventory by pressing Q.
+                Shift + Q to drop the whole stack.
+                The player can't drop tools or armour though.
+                I would have to apply durability to dropped items and apply that for when the player picks up the items, 
+                and I just didn't want to do that coding right now honestly.
+                It'd only take two seconds, but my brain is getting tired, and it's not that important for those items.
+              </p>                                   
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                As you've probably read above I did add in water and lava.
+                They aren't technically blocks though.
+                They will be once I get in flowing water, but that won't be in the Alpha 1 version of the game.
+                Maybe Alpha 2.
+                So right now Water and Lava are basically just the top faces of the block.
+                I'm not going to show a picture of that. I'm sure you can imagine.
+              </p> 
+              <p class="project-details__desc-para">
+                Anyways, I also added in Sugarcane.
+                It will spawn on the sand around water.
+                I couldn't find an easy way to get the Sugarcane to spawn only on the block next to the water though.
+                Maybe this will be another thing to work on for the Alpha 2 version of the game.
+                But for now, it still looks very nice.
+              </p>
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/DevlogEighteen/sugarcane_lake.png" style="width: 50%;">
+                <img src="Images/BinkyCraft/DevlogEighteen/new_blocks.png" style="width: 50%;">                
+              </div>                             
+              
+              <h3 class="project-details__content-title">Recipes</h3>
+              <p class="project-details__desc-para">
+                Ok, not every single recipe is done. But every recipe for items they player can get in survival is done.
+                With some exceptions.
+                Some items could be set up for crafting, but since they aren't fully implemented (like TNT or the Wooden Storage Crate),
+                I decided to not give them a crafting recipe.
+                I'm only keeping them in because they can still be used as decorative blocks in creative mode.
+                Anyways, I'd show off a bunch of recipes here, but I think I'll just start slowly adding them onto the Recipes page of this website.
+              </p>                               
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                This devlog update is probably a blessing for the builders of the world.
+                Nicer looking world with the water now added in, and the blocks now being able to be rotated.
+                There's also the other additions which are just nice to have done.
+              </p>
+              <p class="project-details__desc-para">
+                I have only a handful of tasks left to do before I can say that Alpha 1 will be released.
+                When it is released, I will find a way to make it downloable from the website,
+                or at least a link to download it someplace else.
+              </p> 
+              <p class="project-details__desc-para">
+                The next devlog update will probably knock out those last few tasks honestly.
+                I'm not sure what the exact theme of that devlog will be, but I know at least a couple of the features I'll add to it.
+                I might just decided to make it a progress update, 
+                but I really feel like it'll be better to center it around a theme.
+                I do have a couple of ideas, so we'll see.
+              </p>                                               
+            </div>
+
+                <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
+            <p class="main-footer__short-desc">
+              With great power comes great time spent playing BinkyCraft.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
