@@ -33,6 +33,33 @@ html {
     html {
       font-size: 65%; } }
 
+/*For the collapsible stuff.*/
+.collapsible {
+  background-color:rgb(36, 15, 0);
+  color: transparent;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+
+  border: 5px solid green;
+
+  font-weight: 700;
+  color: greenyellow;
+  font-size: 2.8rem;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .projects__row-content-title {
+      font-size: 2.4rem; } }
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+
 body {
   box-sizing: border-box;
   position: relative;
@@ -349,6 +376,7 @@ textarea {
           font-size: 2.4rem; } }
     .projects__row-content-desc {
       font-size: 1.8rem;
+      padding-right:10px;
       color: rgb(255, 255, 255);
       max-width: 60rem;
       line-height: 1.7;
