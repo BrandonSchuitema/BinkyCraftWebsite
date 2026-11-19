@@ -59,6 +59,10 @@ html {
   overflow: hidden;
 }
 
+.content_new {
+  overflow: hidden;
+}
+
 
 body {
   box-sizing: border-box;

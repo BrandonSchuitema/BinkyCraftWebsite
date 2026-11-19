@@ -527,8 +527,50 @@
         
         </div>
 
-        <!--
+        <br>
+        <br>
+        <br>       
+
         <button type="button" class="collapsible">Alpha 2 Devlog Updates</button>
+        <div class="content_new">
+
+        <div class="projects__content" style="background-color:#240f00 ; border: 5px solid green; padding-top: 30px; padding-bottom: 30px;">
+
+          <div>
+              <p style="padding-bottom: 30px; border-bottom: 5px solid green;" class="heading-sec__sub">
+                Alpha 2 is the currently in progress version of the game.
+                So all the devlogs in this section are up to date with the current status of the game.
+                Read them.
+              </p>
+          </div>
+
+          <div class="projects__row" style="padding-top: 30px;">
+            <div class="projects__row-img-cont">
+              <img
+                src="Images/BinkyCraft/DevlogTwenty/composter_block.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                style="border-radius: 30px;"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Devlog Twenty - Quality of Life</h3>
+              <p class="projects__row-content-desc">
+                This update is the first step to implementing some of the feedback I after releasing the Alpha One version of the game.
+              </p>
+              <a
+                href="BinkyCraft_DevlogTwenty.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Learn More</a>
+            </div>
+          </div>                                               
+        </div>
+        
+        </div>        
+
+        <!--
+        <button type="button" class="collapsible">Beta 1 Devlog Updates</button>
         <div class="content">
         
         <div class="projects__content" style="background-color:rgb(36, 15, 0) ; border: 5px solid green; padding-top: 30px; padding-bottom: 30px;">
@@ -564,10 +606,35 @@
         <!--Link to Download the game-->
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Version Downloads</span>
-          <a class="heading-sec__sub">Depending on how good your computer is, the game can take quite a while to load up and play. Just a warning.</a>          
+          <a class="heading-sec__sub">
+            Depending on how good your computer is, the game can take quite a while to load up and play. Just a warning.
+            If you are interested in this game and want to add input...
+            Here is a google forms link you can type some stuff into: 
+            <a class="heading-sec__sub" style="color: greenyellow" href="https://forms.gle/Y9Hk92a7eEenRfNr7" target="blank"><strong>Feedback Link</strong></a>.
+          </a> 
+          <p class="heading-sec__sub">
+
+          </p>                   
           <br>
           <br>
-          <a class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--Alpha One--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download><strong>--Alpha One--</strong></a>
+          <a style="color: grey; cursor: pointer;" class="heading-sec__sub" onclick="VersionNotReadyFunction()"><strong>--Alpha Two--</strong></a>
+
+          <!--
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--Beta One--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--Beta Two--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.0--</a>  
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.1--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.2--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.3--</a>  
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.4--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.5--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.6--</a>  
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.7--</a>  
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.8--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--1.9--</a>
+          <a style="color: #adff2f;" class="heading-sec__sub" href="Version Downloads/BinkyCraft_AlphaOne_V2.zip" download>--2.0--</a>                              
+          -->                            
         </h2>         
 
       </div>
@@ -619,3 +686,9 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
+<script>
+function VersionNotReadyFunction() {
+  alert("This version is currently being worked on!\nCheck again some other day I guess!");
+}
+</script>
