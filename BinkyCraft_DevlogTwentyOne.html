@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binky Craft - Devlog Twenty One</title>
+    <link rel="website icon" type="png" href="Images/youtube_racheal_background_potato_v1.png">
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="Images/youtube_racheal_background_potato_v1.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">BinkyCraft</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_About.html" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="BinkyCraft_Recipes.html" class="header__link">Recipes </a>
+            </li>              
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_About.html"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="BinkyCraft_Recipes.html"> Recipes </a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Binky Craft</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Devlog Twenty One - Farming
+          </p>
+        </div>
+        <!--
+        <div class="project-cs-hero__cta">
+          <a href="https://koopwhip1129.itch.io/foo-di-oh" class="btn btn--bg" target="_blank">Play Game</a>
+        </div>
+        -->
+      </div>
+    </section>
+    <section class="project-details" style="background-image: url(Images/background_dirt.png); background-size: 200px 200px;">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="Images/BinkyCraft/Devlog_TwentyOne/carrot_crop_field_grown.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+              style="border-radius: 30px;"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Devlog Twenty One Overview</h3>
+              <p class="project-details__desc-para">
+                I love this devlog update.
+                The player is now finally able to actually plant and grow the crops in the game.
+                This will make food gathering a lot easier, that's for sure.
+                It'll also help enhance the survival bit of the game; actually having to gather and grow foods.
+              </p>        
+
+              <h3 class="project-details__content-title">Main Features</h3>
+              <p class="project-details__desc-para">
+                There's a huge feature in this devlog update.
+                But I'm going to seperate it into smaller sections: 
+                planting crops, growing crops, and harvesting crops.
+                So I'll talk about these topics in a little detail.
+              </p> 
+              <p class="project-details__desc-para">
+                To be able to plant crops, the player must be holding a plantable crop.
+                Something like a carrot or potato. And they must be looking at the Farmland block.
+                Then they right click and it'll create a crop.
+              </p>                                       
+              <p class="project-details__desc-para">
+                After a set amount of time, the crops will have a random chance of growing to their next stage.
+                This is only true though if the player is close enough for the crops to grow of course.
+              </p>             
+              <p class="project-details__desc-para">
+                When harvesting the crops, if the crop is in it's final growth phase, the player will have a random chance of getting a few more crops from the harvest.
+                I think it was up to four or something.
+                If the crop is still growing, and the player harvests it early, the player will only get back a single crop or the seed variant of the crop.
+                Also here is what the crop fields would look like.
+              </p>  
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/beetroot_field.png" style="width: 45%;">   <!--I can add borders to these images as well!-->        
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/carrot_crop_field_grown.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/potato_field.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/wheat_field.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/pumpkin_field.png" style="width: 45%;">   <!--I can add borders to these images as well!-->                                                                                                                                        
+              </div>               
+              <p class="project-details__desc-para">
+                Oh, and I added all the crops as items that can be put into the Composter to be turned into Bonemeal.
+                Just in case this was something the player might be interested in.
+                Also bonemeal can of course be used on crops to speed up their growth.
+              </p>  
+              <p class="project-details__desc-para">
+                Now how does the player get all these crops?
+                Because I realized that there was no way for the player to get carrots, potatoes, or beetroots in the game.
+                So I had to fix that.
+                Pigs have a small chance of dropping carrots.
+                Cows have a small chance of dropping potatoes. Because why not, I guess?
+                And carrots, pototoes, and beetroot all have a small chance of dropping from Flowering Grass.
+                My thought is that maybe there's crop seeds in the flowers or something.
+                I don't know. In Minecraft, you get this stuff from chests, or villager fields.
+                But I don't have those yet, so I had to work with what I had.
+              </p>  
+              <p class="project-details__desc-para">
+                Now here is two small fixes to the game.
+                Firstly, I gave Shears a lot more durability. I found that they were just getting destroyed way too quickly.
+                Secondly, I fixed a rendering problem I had with non-block shapes.
+                You may have noticed some of the non-block items in the game looked weird or were missing a face entirely when up against a full block.
+                Well, this has been fixed now.
+                I'll see if I can get some before and after pictures of what I'm talking about.
+              </p> 
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/oldRenderSelf_flower.png" style="width: 45%;">   <!--I can add borders to these images as well!-->        
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/oldRenderSelf_wall.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/renderSelf_more.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/renderSelf_wall.png" style="width: 45%;">   <!--I can add borders to these images as well!-->                                                                                                                                        
+              </div>                                                                                                                                                     
+
+              <h3 class="project-details__content-title">Blocks</h3>
+              <p class="project-details__desc-para">
+                This devlog update just has a bunch of crop blocks.
+                I'll show off all the different stages for the crops.
+                Because of how I'm doing stuff, the watermelon and pumpkin crops are a little weird, but eh. 
+                I think I did alright with what I was capable of.
+                And hopefully you can guess which crops are which.
+              </p>  
+              <div style="margin-left: auto; margin-right: auto; display: block; margin: auto; text-align: center;">
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/beetroot_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->        
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/carrot_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/potato_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/wheat_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->   
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/pumpkin_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->  
+                <img src="Images/BinkyCraft/Devlog_TwentyOne/watermelon_crops.png" style="width: 45%;">   <!--I can add borders to these images as well!-->                                                                                                                                       
+              </div>                                                                    
+
+              <h3 class="project-details__content-title">Conclusion</h3>
+              <p class="project-details__desc-para">
+                Somehow with the addition of being able to grow and harvest food, I feel like the game has gotten dramatically closer to being complete.
+                It hasn't, but the feeling is there.
+                Still though, this is a great thing for the game.
+              </p>    
+              <p class="project-details__desc-para">
+                Now I have a few ideas for the next devlog.
+                I'm not going to spoil what they are though.
+                There is one idea I'm leaning towards, so I'm really hoping I can get it to work nicely.
+                If I can, then that will be amazing.
+                If not, then I'll work with one of my other ideas.
+                Either way, fan feedback is slowly getting added in and stuff is being worked on to finish the game.
+              </p>                                                                                    
+            </div>
+
+                <a
+                href="index.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Back</a>
+
+            <br>
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">BINKYCRAFT</h4>
+            <p class="main-footer__short-desc">
+              "BinkyCraft. BinkyCraft! BINKYCRAFT! BINKYCRAFT!!!" said everybody playing BinkyCraft.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
